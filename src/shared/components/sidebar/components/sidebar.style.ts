@@ -5,6 +5,8 @@ const sidebarWidth = "15rem";
 
 export const SideBarContainer = styled(`div`)({
   display: "flex",
+  // height: "100vh",
+  zIndex: 8,
 });
 
 export const SidebarLeftMenu = styled(`div`)({

@@ -5,16 +5,18 @@ import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
 import AddBoxTwoToneIcon from "@mui/icons-material/AddBoxTwoTone";
+import DownloadForOfflineOutlinedIcon from "@mui/icons-material/DownloadForOfflineOutlined";
 export type IconType =
   | "home"
   | "search"
   | "playCircle"
   | "heart"
   | "library"
-  | "add";
+  | "add"
+  | "download";
 
 const iconMap: {
-  [key: string]: any;
+  [key: string]: JSX.Element;
 } = {
   /**
    * This will be improve later
@@ -25,6 +27,7 @@ const iconMap: {
   heart: <FavoriteBorderIcon fontSize="inherit" />,
   library: <LocalLibraryIcon fontSize="inherit" />,
   add: <AddBoxTwoToneIcon fontSize="inherit" />,
+  download: <DownloadForOfflineOutlinedIcon fontSize="inherit" />,
 };
 
 export default iconMap;

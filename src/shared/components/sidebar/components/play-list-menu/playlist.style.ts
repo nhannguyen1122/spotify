@@ -1,10 +1,25 @@
 import { styled } from "@mui/material/styles";
-import playerHeight from "@Shared/style/variable.scss";
-// const playerHeights = playerHeight;
-const windowHeight = window.innerHeight - 90;
+import colors from "@Shared/style/palette.scss";
 
-export const PlaylistContainer = styled(`div`)({
+export const PlaylistContainer = styled(`div`)({});
+
+export const PlaylistListContainer = styled(`ul`)({
+  height: "100%",
+  padding: 0,
+  margin: 0,
+  overflowX: "hidden",
+  overflowY: "auto",
+});
+
+export const PlayListItems = styled(`li`)({
+  marginRight: "1rem",
+  marginBottom: "0.5rem",
   color: "inherit",
-  height: windowHeight,
-  border: "1px solid red",
+  whiteSpace: "nowrap",
+  overflow: "hidden",
+  textOverflow: "ellipsis",
+
+  "&:hover": {
+    color: colors.light,
+  },
 });

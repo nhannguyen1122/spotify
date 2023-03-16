@@ -6,8 +6,8 @@ import {
 import Button, { ButtonProps as MuiButtonProps } from "@mui/material/Button";
 import iconMap from "@/asserts/icon/Icon.config";
 import IconButton from "@mui/material/IconButton";
-import { IconProps } from "@mui/material";
-import { iconSx } from "./button.style";
+import { IconProps, Typography } from "@mui/material";
+import { ButtonIconWrapper, iconSx } from "./button.style";
 
 function AppButton({
   isIcon = false,
@@ -31,7 +31,7 @@ function AppButton({
   const renderButton = () => {
     return (
       <Button size={size} {...props}>
-        {icon && iconMap[icon]}
+        <ButtonIconWrapper>{icon && iconMap[icon]}</ButtonIconWrapper>
         {props?.children}
       </Button>
     );

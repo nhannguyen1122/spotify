@@ -8,7 +8,7 @@ export function TestComponent() {
     <React.Fragment>
       <AppButton isIcon icon="home" />
 
-      <AppButton color="success" variant="contained">
+      <AppButton icon="search" color="success" variant="contained">
         SEARCH
       </AppButton>
       <br />

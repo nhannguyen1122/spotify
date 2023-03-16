@@ -12,3 +12,7 @@ export interface IMenuConfig {
   name: string;
   config: IMenuData[];
 }
+
+export interface IBigMenu {
+  id?: string;
+}

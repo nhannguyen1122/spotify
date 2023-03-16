@@ -11,6 +11,8 @@ export const MenuDividerSx = {
   marginBottom: "1rem",
 };
 
+export const BigMenuContainer = styled(`div`)({});
+
 export const LogoContainer = styled(`div`)({
   marginTop: "1rem",
   marginBottom: "1rem",

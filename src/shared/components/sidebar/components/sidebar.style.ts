@@ -1,7 +1,7 @@
 import colors from "@Shared/style/palette.scss";
 import { styled } from "@mui/material/styles";
 
-const sidebarWidth = "15rem";
+export const sidebarWidth = "15rem";
 
 export const SideBarContainer = styled(`div`)({
   display: "flex",
@@ -22,4 +22,8 @@ export const SidebarLeftMenu = styled(`div`)({
 export const SidebarRightContent = styled(`div`)({
   marginLeft: sidebarWidth,
   width: "100%",
+});
+
+export const OutletWrapper = styled(`div`)({
+  marginTop: "10rem",
 });

@@ -4,10 +4,12 @@ import {
   SideBarContainer,
   SidebarLeftMenu,
   SidebarRightContent,
+  OutletWrapper,
 } from "./components/sidebar.style";
 import BigMenu from "./components/big-menu/BigMenu.component";
 import PlayListMenu from "./components/play-list-menu/PlaylistMenu.component";
-import AppPlayer from "./player/Player.component";
+import AppPlayer from "./components/player/Player.component";
+import AppHeader from "./components/header/Header.Component";
 function SideBar() {
   const bigMenuRef = useRef<any>(null);
   const [bigMenuHeight, setBigMenuHeight] = useState<number>(0);
@@ -27,7 +29,10 @@ function SideBar() {
         </SidebarLeftMenu>
 
         <SidebarRightContent>
-          <Outlet />
+          <AppHeader />
+          <OutletWrapper>
+            <Outlet />
+          </OutletWrapper>
         </SidebarRightContent>
       </SideBarContainer>
 

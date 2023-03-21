@@ -4,6 +4,7 @@ import {
   AppHeaderContainer,
   NavigateWrapper,
   UserInfoWrapper,
+  upgradeBtnSx,
 } from "./header.style";
 import AppUserInfor from "./components/user-infor/UserInfor.component";
 
@@ -11,14 +12,26 @@ function AppHeader() {
   return (
     <AppHeaderContainer>
       <NavigateWrapper>
-        <AppButton isIcon icon="previous" />
+        <AppButton
+          variant="outlined"
+          color="primary"
+          isIcon
+          icon="back-forward"
+        />
 
-        <AppButton isIcon icon="next" />
+        <AppButton variant="contained" color="primary" isIcon icon="forward" />
       </NavigateWrapper>
 
       <UserInfoWrapper>
-        <AppButton>Nâng cấp</AppButton>
-
+        <AppButton
+          size="small"
+          sx={upgradeBtnSx}
+          variant="contained"
+          color="primary"
+        >
+          Nâng cấp
+        </AppButton>
+        &nbsp; &nbsp;
         <AppUserInfor></AppUserInfor>
       </UserInfoWrapper>
     </AppHeaderContainer>

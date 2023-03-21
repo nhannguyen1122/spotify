@@ -30,6 +30,20 @@ export const CardContainer = styled(`div`)({
   },
 });
 
+export const CardPlayButonHorizontalSx = {
+  position: "absolute",
+  fontSize: "4rem",
+  right: "15px",
+  top: "12px",
+  /**hidden */
+  visibility: "hidden",
+  opacity: 0,
+  "&:hover": {
+    transform: "scale(1.1)",
+    ...cardTransition,
+  },
+};
+
 export const CardPlayButonVerticalSx = {
   position: "absolute",
   fontSize: "2.5rem",
@@ -80,4 +94,5 @@ export const HorizontalContainer = styled("div")({
   justifyContent: "flex-start",
   alignItems: "center",
   flexWrap: "nowrap",
+  minHeight: "5rem",
 });

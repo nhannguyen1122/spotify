@@ -25,5 +25,8 @@ export const SidebarRightContent = styled(`div`)({
 });
 
 export const OutletWrapper = styled(`div`)({
-  marginTop: "10rem",
+  paddingTop: "10rem",
+  background: colors.headerBgc,
+  height: "100vh",
+  padding: "10rem 2rem",
 });

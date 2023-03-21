@@ -6,7 +6,7 @@ import {
 import Button, { ButtonProps as MuiButtonProps } from "@mui/material/Button";
 import iconMap from "@/asserts/icon/Icon.config";
 import IconButton from "@mui/material/IconButton";
-import { IconProps, Typography } from "@mui/material";
+import { IconProps } from "@mui/material";
 import { ButtonIconWrapper, iconSx } from "./button.style";
 
 function AppButton({

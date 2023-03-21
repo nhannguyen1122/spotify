@@ -5,6 +5,7 @@ import { CardDirection, ICard } from "@/shared/components/card/cards.interface";
 import TestImage from "@/asserts/image/test.jpg";
 import {
   CardContainer,
+  CardPlayButonHorizontalSx,
   CardPlayButonVerticalSx,
   CartDescriptionSx,
   CartTitleSx,
@@ -52,13 +53,13 @@ function AppCard({
   const horizontalLayout = () => {
     return (
       <HorizontalContainer>
-        <ImageContainer>
+        <ImageContainer sx={{ borderRadius: "0px" }}>
           <img
             className=""
             src={TestImage}
             alt="test"
-            width={150}
-            height={150}
+            width={100}
+            height={100}
           />
         </ImageContainer>
 
@@ -92,7 +93,11 @@ function AppCard({
 
       <AppButton
         className="play-button"
-        sx={direction === "vertical" ? CardPlayButonVerticalSx : {}}
+        sx={
+          direction === "vertical"
+            ? CardPlayButonVerticalSx
+            : CardPlayButonHorizontalSx
+        }
         color="success"
         isIcon
         icon="playCircle"

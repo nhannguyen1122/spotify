@@ -4,6 +4,8 @@ import {
   PlayerDesImg,
   PlayerDescriptionContainer,
   PlayerDesription,
+  TitleDesTypoSx,
+  SongNameSx,
 } from "./playerDescription.style";
 import TestImage from "@/asserts/image/test.jpg";
 import { Card, Container, Grid, Typography } from "@mui/material";
@@ -17,8 +19,12 @@ function PlayerDescription() {
       </PlayerDesImg>
 
       <PlayerDesription>
-        <Typography variant="h6">Lullaby</Typography>
-        <Typography variant="h6">Lullaby</Typography>
+        <Typography variant="body2" sx={TitleDesTypoSx}>
+          Lullaby
+        </Typography>
+        <SongNameSx>
+          Lullaby Lullaby Lullaby Lullaby Lullaby Lullaby Lullaby Lullaby
+        </SongNameSx>
       </PlayerDesription>
       <PlayerDesIcon>
         <AppButton isIcon icon="heart"></AppButton>

@@ -18,7 +18,9 @@ import ReorderIcon from "@mui/icons-material/Reorder";
 import CastConnectedIcon from "@mui/icons-material/CastConnected";
 import VolumeDown from "@mui/icons-material/VolumeDown";
 import VolumeUp from "@mui/icons-material/VolumeUp";
-
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 export type IconType =
   | "home"
   | "search"
@@ -39,7 +41,10 @@ export type IconType =
   | "wait-list"
   | "connect-other"
   | "vol-down"
-  | "vol-up";
+  | "vol-up"
+  | "forward"
+  | "back-forward"
+  | "down";
 
 const iconMap: {
   [key: string]: JSX.Element;
@@ -63,10 +68,13 @@ const iconMap: {
   play: <PlayCircleFilledWhiteIcon fontSize="inherit" />,
   loop: <LoopIcon fontSize="inherit" />,
   mic: <MicIcon fontSize="inherit" />,
+  down: <ArrowDropDownIcon fontSize="inherit" />,
+  forward: <ArrowForwardIosIcon fontSize="inherit" />,
   "wait-list": <ReorderIcon fontSize="inherit" />,
   "connect-other": <CastConnectedIcon fontSize="inherit" />,
   "vol-down": <VolumeDown fontSize="inherit" />,
   "vol-up": <VolumeUp fontSize="inherit" />,
+  "back-forward": <ArrowBackIosIcon fontSize="inherit" />,
 };
 
 export default iconMap;

@@ -9,7 +9,7 @@ export const PlayerSx = {
 };
 
 export const PlayerContainer = styled(`div`)({
-  background: colors.bgGrey,
+  background: colors.secondary,
   zIndex: 1500,
   color: colors.lightText,
   position: "fixed",

@@ -17,7 +17,7 @@ export function TestComponent() {
       <br />
       <br />
       <AppCard>
-        <Typography>aaa</Typography>
+        <Typography variant="h2">aaa</Typography>
       </AppCard>
 
       <AppCard

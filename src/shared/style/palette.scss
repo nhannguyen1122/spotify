@@ -2,12 +2,15 @@ $black:#000000;
 $black-card:#181818;
 $grey:#282828;
 $grey-bg:#303030;
+$grey-bg-main:#222222;
 $linear:Linear;
 $linear-65:Linear 65;
 $green:#159643;
 $green-bold:#004638;
 $white:#FFFFFF;     
 $text:#B3B3B3;     
+$purble:rgb(72, 32, 176);
+
 
 :export {
 primary:$black;
@@ -17,6 +20,7 @@ successDark:$green-bold;
 light:$white;
 lightText:$text;
 bgGrey:$grey-bg;
-darkCard:$black-card
+darkCard:$black-card;
+headerBgc:$grey-bg-main;
 }
 
